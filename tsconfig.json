@@ -16,9 +16,9 @@
     "target": "es6",
     "baseUrl": "./",
     "paths": {
-      "^*": ["./lib*"]
+      "^*": ["./lib*"],
     }
   },
   "typeRoots": ["node_modules/@types/", "lib/@types/"],
-  "include": ["lib", "cpp"]
+  "include": ["lib"]
 }
