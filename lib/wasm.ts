@@ -1,7 +1,7 @@
 import path from 'path';
 
 const wasm = fetch(
-  path.resolve('node_modules', 'lib-wasm-boilerplate', 'lib', 'main.wasm'),
+  path.resolve('node_modules', 'lib-wasm-boilerplate', 'dist', 'main.wasm'),
 )
   .then(response => response.arrayBuffer())
   .then(buffer => WebAssembly.compile(buffer))
