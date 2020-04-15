@@ -4,7 +4,8 @@
   "description": "Npm package boilerplate for wasm projects",
   "main": "dist/index.js",
   "scripts": {
-    "dist": "rm -rf dist/ && mkdir -p dist/ && tsc --project './tsconfig.dist.json'",
+    "dist": "rm -rf dist/ && mkdir -p dist/ && tsc --project './tsconfig.dist.json' && npm run dist:copy",
+    "dist:copy": "cp -R ./lib/main.wasm ./dist",
     "start": "cross-env NODE_ENV=development DEBUG=true webpack-dev-server --mode development",
     "prettier": "prettier --write '**/*.{ts,tsx,js,jsx,css,less,json}'",
     "typecheck": "tsc --noEmit -p tsconfig.json",
