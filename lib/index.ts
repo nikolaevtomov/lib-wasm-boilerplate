@@ -1,7 +1,5 @@
 import { wasm } from './wasm';
 
-const answer = () => 42;
-
 const factorial = async (n: number) =>
   await wasm
     .then((value: Record<string, any>) => {
@@ -14,4 +12,4 @@ const add = async (m: number, n: number) =>
     return value.add(m, n);
   });
 
-export { factorial, add, answer };
+export { factorial, add };
