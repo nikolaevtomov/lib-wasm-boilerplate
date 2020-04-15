@@ -1,6 +1,6 @@
 {
   "name": "lib-wasm-boilerplate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Npm package boilerplate for wasm projects",
   "main": "dist/index.js",
   "scripts": {
