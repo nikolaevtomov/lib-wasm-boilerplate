@@ -1,4 +1,5 @@
 ### Npm package boilerplate for wasm projects
+This package lets you write a library in clang, compile into wasm and use it in a javascript project.
 
 #### Install
 `
