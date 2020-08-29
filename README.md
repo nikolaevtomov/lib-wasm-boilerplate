@@ -4,18 +4,6 @@
 `
 $ npm install lib-wasm-boilerplate -S
 `
-
-#### Build wasm file
-
-`
-$ make
-`
-
-#### Build production folder
-
-`
-$ npm run dist
-`
 #### Examples
 
 ```
@@ -48,3 +36,23 @@ const Hello: React.FunctionComponent = () => {
 
 export default React.memo(Hello);
 ```
+
+### Development
+
+#### Prerequisite
+Download and install `emscripten`
+https://emscripten.org/docs/getting_started/downloads.html
+
+#### Build wasm file
+
+`
+$ make
+`
+
+#### Build production folder
+
+`
+$ npm run dist
+`
+
+

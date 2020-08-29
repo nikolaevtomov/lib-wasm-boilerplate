@@ -1,19 +1,5 @@
-## https://dassur.ma/things/c-to-webassembly/
-
-# clang --target=wasm32 -emit-llvm -c -S main.c
-
-## The hard way
-# llc -march=wasm32 -filetype=obj main.ll
-# wasm-objdump -x main.o
-# wasm-ld --no-entry --export-all -o main.wasm main.o
-
-## Less hard way
-# clang --target=wasm32 -nostdlib -Wl,--no-entry -Wl,--export-all -o main.wasm main.c
-
-## Optimised
-
 all:
-	clang --target=wasm32 -O3 -flto -nostdlib -Wl,--no-entry -Wl,--export-all -Wl,--lto-O3 -o lib/main.wasm lib/main.c
+	emcc -O2 -s WASM=1 -s SIDE_MODULE=1 lib/main.c -o lib/main.wasm
 
 clean:
 	rm -rf lib/main.wasm
