@@ -66,5 +66,8 @@
   "license": "MIT",
   "repository": {
     "url": "git@github.com:nikolaevtomov/lib-wasm-boilerplate.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
