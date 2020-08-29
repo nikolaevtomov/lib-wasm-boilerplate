@@ -16,10 +16,8 @@ const wasm = fetch(
       env: {},
     };
     const instance = new WebAssembly.Instance(module, dependencies);
-    // console.log(instance.exports);
-
     const wasm: Record<string, any> = instance.exports;
-    // console.log('factorial function result is : ' + wasm.factorial(3));
+
     return wasm;
   });
 
