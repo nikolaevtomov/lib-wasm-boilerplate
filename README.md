@@ -4,6 +4,16 @@
 `
 $ npm install lib-wasm-boilerplate -S
 `
+
+#### Include the external wasm file in your production build
+```
+"scripts": {
+  ...
+  "external:copy": "cp -R ./node_modules/lib-wasm-boilerplate/dist/main.wasm ./dist"
+  ...
+}
+```
+
 #### Examples
 
 ```
@@ -54,5 +64,13 @@ $ make
 `
 $ npm run dist
 `
+
+#### Run locally
+
+`
+$ npm run start
+`
+
+and navigate to `http://localhost:9000/`
 
 
