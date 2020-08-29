@@ -68,6 +68,6 @@
     "url": "git@github.com:nikolaevtomov/lib-wasm-boilerplate.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/lib-wasm-boilerplate"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
